@@ -1,0 +1,116 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#img-container img {
+    width: 100%;
+}
+#card {
+    background-color: white;
+    align-self: center;
+    width: 75%;
+    max-width: 400px;
+    min-width: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px -6px rgba(0,0,0,0.75);
+}
+
+#information {
+    display: flex;
+}
+
+#summary {
+    display: flex;
+    align-items: center;
+}
+
+#summary h2 {
+    margin: 25px 0 15px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-family: 'Montserrat', sans-serif;
+} #summary p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    line-height: 1.7rem;
+    width: 85%;
+    margin-bottom: 30px;
+} #plan {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+    width: 85%;
+    margin-bottom: 30px;
+} #plan img {
+    margin-right: 5px;
+} #plan a {
+    font-family: 'Montserrat', sans-serif;
+    align-self: right;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+} #plan a:hover {
+    opacity: 0.7;
+} 
+#plan-information {
+    justify-self: center;
+} #plan-information h4{
+    padding-bottom: 5px;
+    color: hsl(223, 47%, 23%);
+} #buttons {
+    display: flex;
+} #proceed, #cancel {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    width: 85%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+} #proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 2px 3px 18px 14px rgba(8,71,232,0.15);
+} #cancel {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+} #cancel:hover {
+    cursor: pointer;
+    color: black;
+} #proceed:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 374px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
